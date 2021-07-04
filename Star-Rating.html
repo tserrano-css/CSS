@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ajax Samples</title>
+
+    <link rel="stylesheet" type="text/css" href="./Star-Rating.css">
+  </head>
+
+  <body>
+<label class="rating-label"><strong>“Half stars” using <code>step="0.5"</code></strong>
+    <input
+      class="rating"
+      max="5"
+      oninput="this.style.setProperty('--value', this.value)"
+      step="0.5"
+      type="range"
+      value="1">
+  </label>
+  
+  <label class="rating-label"><strong>Set <code>max</code> and <code>--stars</code> to 4”</strong>
+    <input
+      class="rating"
+      max="4"
+      oninput="this.style.setProperty('--value', this.value)"
+      step="1"
+      style="--stars:4;--value:2"
+      type="range"
+      value="2">
+  </label>
+  
+  <label class="rating-label" dir="rtl"><strong>Set <code>dir</code> to <code>rtl</code></strong>
+    <input
+      class="rating"
+      max="5"
+      oninput="this.style.setProperty('--value', this.value)"
+      step="0.5"
+      style="--value:2"
+      type="range"
+      value="2">
+  </label>
+</body>
+
+</html>
